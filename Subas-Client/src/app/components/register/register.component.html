@@ -1,0 +1,37 @@
+ <!-- new-customers -->
+<div class="container" style="margin-top:200px">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="new-customers">
+                <form action="#" class ="form-sign" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <h6 class="widget-title border-left mb-50">NEW CUSTOMERS</h6>
+                    <div class="login-account p-30 box-shadow">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" formControlName ="username"  placeholder="User Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="password" formControlName ="password"   placeholder="Password">
+                            </div> 
+                        </div>
+                        <div class="row"> 
+                            <div class="col-sm-12">
+                                <input type="password" formControlName ="confirmPassword"  placeholder="Confirm Password">
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="submit-btn-1 mt-20 btn-hover-1" type="submit" value="register" style="cursor:pointer">Register</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="submit-btn-1 mt-20 btn-hover-1 f-right" type="reset" style="cursor:pointer">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+  <!-- LOGIN SECTION START -->
+<div class="login-section mb-80" >
+    <div class="container" style="margin-top:200px">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="registered-customers">
+                    <h6 class="widget-title border-left mb-50">REGISTERED CUSTOMERS</h6>
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div class="login-account p-30 box-shadow">
+                            <p>Please log in.</p>
+                            <input type="text" formControlName ="username" name="username" placeholder="Email Address">
+                            <input type="password" formControlName ="password" name="password" placeholder="Password">
+                            <p><small><a href="#">Forgot our password?</a></small></p>
+                            <button class="submit-btn-1 btn-hover-1" type="submit" style="cursor: pointer;">login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- LOGIN SECTION END -->             
+
